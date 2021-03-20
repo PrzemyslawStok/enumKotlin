@@ -12,6 +12,22 @@ fun main() {
     if(dl0==Dlugosc.MILIMETRY)
         println("dl0 to dlugosc w milimetrach")
 
+    when(dl0){
+        Dlugosc.MILIMETRY->println("dl0 to dlugosc w milimetrach")
+        Dlugosc.CENTYMETRY,Dlugosc.MILIMETRY->println("To jednostka mniejsza od metra")
+
+        Dlugosc.METRY->println("dl0 to dlugosc w metrach")
+
+        else->println("dl0 to inna jednostka dlugosci")
+    }
+
+    val i = 2
+
+    when(i){
+        1,2,3,4,5->println("[1,5]")
+        6->println("6")
+        else->println("inna liczba")
+    }
 
 
 }
